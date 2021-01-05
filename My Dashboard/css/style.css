@@ -1,0 +1,131 @@
+
+*{
+    box-sizing: border-box;
+}
+.content{
+    background-color: #f3f3f3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.content div{
+    border-radius: 0.25rem;
+}
+.myprofile{
+    width: 30px;
+    border-radius: 50%;
+}
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards{
+    transition: 0.5s;
+}
+.cards:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 5px #999999;
+}
+.cards:active{
+    transform: scale(1.05);
+}
+.order-viewer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-img img{
+    width: 30px;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+.slide-item{
+    display: flex;
+    justify-content: space-between;
+}
+.slide-item img{
+    width: 150px;
+}
+.bea{
+    margin-top: -100px;
+}
+.carousel-indicators li{
+    background-color: deepskyblue;
+}
+.carousel-indicators li.active{
+    background-color: palevioletred;
+}
+.carousel-indicators{
+    bottom: -30px !important;
+}
+.view_screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    overflow: scroll;
+}
+.nav-brand{
+    background-color: #fff;
+    height: 50px;
+}
+.nav-menu{
+    margin-top: 10px;
+    list-style-type: none;
+    padding:0 ;
+}
+.n-item{
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+.n-item a{
+    color: #000;
+}
+.n-item:hover a{
+    text-decoration: none;
+}
+.n-item:hover{
+    background-color: #e8e8e8;
+    border-radius: 0.25rem;
+}
+.side{
+  overflow-y: scroll;
+    overflow-x: hidden;
+}
+.see{
+    background-color: #74fdff !important;
+}
+.see a{
+    color: #fff;
+}
+
+
+
+
+@media screen and (min-width: 400px) and (max-width: 500px){
+    .all-parent{
+        font-size: 7px;
+    }
+}
+
+
+@media screen and (max-width: 780px ){
+    .side{
+        position: absolute;
+        width: 300px;
+        background-color: white !important;
+        z-index: 1000;
+        margin-left: -100%;
+    }
+    .for-resp{
+        margin-top: 100px !important;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+    .for-resp{
+        margin-top: 100px !important;
+    }
+}
